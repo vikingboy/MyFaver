@@ -41,6 +41,12 @@ public class MainActivity extends AppCompatActivity {
         Handler handler = new Handler();
         handler.obtainMessage();
         Looper.prepare();
+        textView.post(new Runnable() {
+            @Override
+            public void run() {
+
+            }
+        });
         SoftReference<String>  s = new SoftReference<String>("aaaa");
     }
 
